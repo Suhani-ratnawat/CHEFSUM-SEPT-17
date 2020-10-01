@@ -1,0 +1,46 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define fi first
+#define sec second
+#define pb push_back
+#define mp(x,y) make_pair(x,y)
+#define mod 1000000007
+#define me(i,x,n) for( i=x;i<n;i++)
+#define she(i,x,n) for( i=x;i>=0;i--)
+#define all(v) v.begin(),v.end()
+#define thunder ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define try cin>>t;while(t--)
+
+int main() 
+{    
+    thunder
+	ll t,n,m,i,s,j,k,c,ans;
+	try
+	{
+	    s=0,ans=0;
+	    cin>>n;
+	    vector <ll> vec(n);
+	    me(i,0,n)
+	    {
+	        cin>>vec[i];
+	        if(vec[i]<s)
+	        {
+	            s=vec[i];
+	            ans=i;
+	        }
+	    }
+	    cout<<ans+1<<endl;
+	    
+	    
+	}
+	   
+	return 0;
+}
+
+
+
+
+//WHY ARE YOU STALKING?
+
